@@ -1,0 +1,15 @@
+{
+  "name": "Example-1",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "grunt": "latest",
+    "grunt-contrib-jshin": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-contrig-uglify": "latest"
+  },
+  "devDependencies": {
+    "grunt-contrib-uglify": "~0.9.1",
+    "grunt-contrib-jshint": "~0.11.2"
+  }
+}
