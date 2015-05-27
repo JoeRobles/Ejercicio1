@@ -1,7 +1,7 @@
 module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
-        uglify: {
+        usemin: {
             options: {
                 banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
             },
@@ -20,8 +20,8 @@ module.exports = function(grunt) {
             all: ['Gruntfile.js', 'web/js/*.js']
         }
     });
-    grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-usemin');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-jshint');
-    grunt.registerTasks('default', ['uglify', 'watch', 'jshint']);
+    grunt.registerTask('default', ['usemin', 'watch', 'jshint']);
 };
